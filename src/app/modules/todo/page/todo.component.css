@@ -1,0 +1,140 @@
+.nav-bar {
+  width: 100%;
+}
+.nav-bar ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-bar li.selected {
+  border-bottom-color: rgb(25, 135, 84) !important;
+}
+
+.nav-bar li {
+  color: rgb(25, 135, 84);
+  border-bottom: 2px solid transparent;
+  font-weight: 800;
+  width: 50%;
+  text-align: center;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+.nav-bar li:hover {
+  background-color: rgba(5, 122, 68, 0.185);
+}
+
+.container-forms-and-shadow {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.45;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container-forms form {
+  /* transform: translateY(-50%); */
+  width: 40rem;
+  background-color: #2b2f33;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.container-forms form .form-label {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+.container-forms form .form-label::after {
+  background-color: transparent !important;
+}
+
+.container-forms input,
+textarea {
+  background-color: #2b2f33 !important;
+  border: 2px solid #5b6166 !important;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0px -1px 5px 2px rgb(25, 135, 84) !important;
+}
+
+textarea {
+  resize: none;
+  height: 10rem !important;
+}
+.cards {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.card {
+  width: 75%;
+  padding: 1rem;
+  background-color: rgb(25, 135, 84);
+  border-radius: 2rem;
+  color: #fff;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+}
+
+.card p {
+  color: #ccc;
+}
+
+.card > div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.card > div button {
+  border: none;
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  color: #fff;
+}
+
+.card > div button:first-child {
+  background-color: rgb(10, 102, 59);
+}
+.card > div button:first-child:hover {
+  background-color: rgb(6, 66, 38);
+}
+.card > div button:last-child {
+  background-color: rgb(173, 5, 47);
+}
+.card > div button:last-child:hover {
+  background-color: rgb(112, 4, 31);
+}
+
+
+@media (max-width: 769px) {
+  .container-forms form {
+    width: 20rem;
+  }
+}
+@media (max-width: 321px) {
+  .container-forms form {
+    width: 15rem;
+  }
+}
